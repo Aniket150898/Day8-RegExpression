@@ -15,16 +15,21 @@ namespace RegexPattern
             StringValidation stringValidation = new StringValidation();
 
             //UC1
-            Console.WriteLine("Enter The string: ");
-            string firstName = Console.ReadLine();
-            stringValidation.ValidateEnterString(firstName);
+            //Console.WriteLine("Enter The string: ");
+            //string firstName = Console.ReadLine();
+            //stringValidation.ValidateEnterString(firstName);
             
 
-            //UC2
+            ////UC2
+            //Console.WriteLine("-----------------------------------");
+            //Console.WriteLine("Enter The string: ");
+            //string lower = Console.ReadLine();
+            //stringValidation.ValidateEnterString(lower);
+           
+
+            //UC3
             Console.WriteLine("-----------------------------------");
-            Console.WriteLine("Enter The string: ");
-            string lower = Console.ReadLine();
-            stringValidation.ValidateEnterString(lower);
+            stringValidation.CheckHtmlTags();
             Console.ReadLine();
         }
     }
