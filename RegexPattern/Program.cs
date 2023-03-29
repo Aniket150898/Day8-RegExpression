@@ -18,6 +18,13 @@ namespace RegexPattern
             Console.WriteLine("Enter The string: ");
             string firstName = Console.ReadLine();
             stringValidation.ValidateEnterString(firstName);
+            
+
+            //UC2
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Enter The string: ");
+            string lower = Console.ReadLine();
+            stringValidation.ValidateEnterString(lower);
             Console.ReadLine();
         }
     }
