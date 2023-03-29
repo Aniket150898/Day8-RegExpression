@@ -24,7 +24,7 @@ namespace RegexPattern
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("Enter The string: ");
             string lower = Console.ReadLine();
-            stringValidation.ValidateEnterString(lower);
+            stringValidation.ValidateLowerString(lower);
 
 
             //UC3
@@ -32,12 +32,19 @@ namespace RegexPattern
             stringValidation.CheckHtmlTags();
             
 
-            ////UC5
+            //UC5
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("Enter image extension: ");
             string img = Console.ReadLine();
-            stringValidation.ValidateEnterString(img);
+            stringValidation.ImageType(img);
+
+            //UC6
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Enter Proper Website: ");
+            string web = Console.ReadLine();
+            stringValidation.WebsiteType(web);
             Console.ReadLine();
+
         }
     }
 }
