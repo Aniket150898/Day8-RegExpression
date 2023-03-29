@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace RegexPattern
 {
@@ -12,7 +13,9 @@ namespace RegexPattern
         public string Name = ("^[a]{1}[b]{2,3}$");
 
         public string  LowerCase = ("[a-z]+_[a-z]$");
-        
+
+        public string Image = "^([a-z0-9]+)(\\.png)$";
+
         public void ValidateEnterString(string EnterName)
         {
             if (Regex.IsMatch(EnterName, Name))
@@ -40,6 +43,14 @@ namespace RegexPattern
             {
                 Console.WriteLine(match.Value);
             }
+        }
+
+        public void ImageType(string image)
+        {
+            if (Regex.IsMatch(image, Image))
+                Console.WriteLine("Valid Image extension");
+            else
+                Console.WriteLine("Invalid Image extension :" + image);
         }
     }
 }
